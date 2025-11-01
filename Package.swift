@@ -21,6 +21,10 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "FeatureLogin"),
+        dependencies: [
+        .product(name: "UIComponents", package: "UIComponents"),
+        .product(name: "CommonKit", package: "CommonKit"),
+    ]
         .testTarget(
             name: "FeatureLoginTests",
             dependencies: ["FeatureLogin"]
