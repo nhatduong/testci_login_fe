@@ -24,7 +24,7 @@ let package = Package(
         dependencies: [
         .product(name: "UIComponents", package: "UIComponents"),
         .product(name: "CommonKit", package: "CommonKit"),
-    ])
+    ]),
         .testTarget(
             name: "FeatureLoginTests",
             dependencies: ["FeatureLogin"]
